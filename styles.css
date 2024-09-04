@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(207,222,246);
+}
+
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 305px;
+    min-width: 280px;
+}
+
+.right-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255,255,255);
+    border-radius: 0.75rem;
+    padding: 40px;
+    margin-bottom: 40px;
+    height:550px;
+    width:350px;
+}
+
+.button-icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 0.5rem;
+    /* margin-left: 10px; */
+}
+
+.Apple{
+    border-radius: 10px 10px;
+    border-style: none;
+    
+}
+.Facebook{
+    border-radius: 10px 10px;
+    border-style: none;
+}
+
+.Microsoft{
+    border-radius: 10px 10px;
+    border-style: none;
+}
+
+.button-container span{
+    color: black;
+    font-size: 20px;
+}
+
+button.Log_in{
+    width: 270px; /* Set the width of the button */
+    height: 45px;
+    border-style: none;
+    border-radius: 10px 10px;
+    color: white;
+    font-size: 25px;
+}
+
+    
