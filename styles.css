@@ -53,11 +53,63 @@ body{
 
 button.Log_in{
     width: 270px; /* Set the width of the button */
-    height: 45px;
+    height: 36px;
     border-style: none;
     border-radius: 10px 10px;
     color: white;
     font-size: 25px;
+    background-color: blue;
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between the input fields */
+    max-width: 400px; /* Optional: limit the width of the form container */
+    margin: 0 auto; /* Center the form container horizontally */
+    margin-bottom: 25px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 250px; /* Make input fields take full width of the form container */
+    height: 35px; /* Set height of the input fields */
+    padding: 0 10px; /* Add horizontal padding inside the input fields */
+    border-radius: 4px; /* Optional: add rounded corners */
+    font-size: 16px; /* Adjust font size */
+    border-style: none;
+    background-color:rgb(240,240,240);
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #888; /* Placeholder text color */
+    font-family:sans-serif ;
+}
+
+.separator-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+       .separator-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 70px; /* Set the width of the container */
+}
+.separator-line {
+    flex: 1;
+    border-bottom: 1px solid black;
+    margin: 0 10px; /* Adjust space around the "OR" text */
+    width: 10px;
     
+}
+.separator-text {
+    font-weight: bold;
+    color: #888;
+}
