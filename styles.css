@@ -1,5 +1,6 @@
 body{
     background-color: rgb(207,222,246);
+    display: grid;
 }
 
 
@@ -36,15 +37,28 @@ body{
     border-style: none;
     
 }
+
+.Apple:hover{
+    background-color: #888;
+    cursor: pointer;
+}
 .Facebook{
     border-radius: 10px 10px;
     border-style: none;
+}
+.Facebook:hover{
+   background-color: #888;
+    cursor: pointer; 
 }
 
 .Microsoft{
     border-radius: 10px 10px;
     border-style: none;
 }
+.Microsoft:hover{
+    background-color: #888;
+     cursor: pointer; 
+ }
 
 .button-container span{
     color: black;
@@ -58,8 +72,10 @@ button.Log_in{
     border-radius: 10px 10px;
     color: white;
     font-size: 25px;
-    background-color: blue;
+    background-color:rgb(22,134,255);
+    cursor: pointer;
 }
+
 
 .form {
     display: flex;
@@ -87,29 +103,67 @@ input[type="password"]::placeholder {
     font-family:sans-serif ;
 }
 
-.separator-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-}
 
-       .separator-container {
+.separator-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px auto;
-    width: 70px; /* Set the width of the container */
+    width: 80%; /* Set the width of the container */
 }
 .separator-line {
-    flex: 1;
-    border-bottom: 1px solid black;
-    margin: 0 10px; /* Adjust space around the "OR" text */
-    width: 10px;
-    
+    flex: 1; /* Ensure lines expand to fill available space */
+    border-bottom: 1px solid #cac4c4;
+}
+.separator-line:first-of-type {
+    margin-right: 15px; /* Space between the line and the "OR" text */
+}
+.separator-line:last-of-type {
+    margin-left: 15px; /* Space between the line and the "OR" text */
 }
 .separator-text {
     font-weight: bold;
-    color: #888;
+    color: #cac4c4;
+    white-space: nowrap; /* Prevent the text from wrapping */
+} 
+
+.log{
+    font-size: 28px;
 }
+.container{
+    display: flex;
+    /* justify-items: center;
+    align-self: center;
+     */
+     margin-left: 19rem;
+     margin-top: 5rem;
+}
+
+.left-display{
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to top left, rgb(22, 134, 255), rgb(245, 244, 244));
+        border-radius: 0.75rem;
+        padding: 40px;
+        margin-bottom: 40px;
+        height:550px;
+        width:350px;
+    }
+
+.left-display p{
+    color: white;
+    font-size: 50px;
+    justify-self: center;
+}
+
+.talk{
+    width: 70px;
+    height: 70px;
+}
+
+.left-display .talk {
+    margin-right: 11rem; /* Pushes the image to the left */
+}
+
